@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dipesh Raj Joshi | Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050b1a;--panel:rgba(10,20,46,.55);--edge:rgba(130,170,255,.24);--blue:#4f8cff;--gold:#ffc928;--tx:#eaf1ff;--mute:#a2b3d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-synthesis:none;margin:0;background:radial-gradient(120% 80% at 50% 0,#12306b 0,#050b1a 60%) var(--bg);color:var(--tx);font:400 1rem/1.65 Figtree,system-ui,sans-serif;overflow-x:hidden}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block}
+h1,h2,h3{font-family:Bungee,system-ui,sans-serif;margin:0}
+a{color:inherit}
+.i{width:1.2em;height:1.2em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+main{max-width:1100px;margin:0 auto;padding:0 18px 140px}
+section{padding:12vh 0 0}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;position:relative;padding:0}
+.seven{position:absolute;right:-2%;top:6%;font:400 min(62vw,520px)/1 Bungee,sans-serif;color:transparent;-webkit-text-stroke:2px rgba(255,201,40,.55);text-shadow:0 0 60px rgba(255,201,40,.25);transform:perspective(900px) rotateY(var(--sy,-18deg)) rotateX(var(--sx,6deg));transition:transform .2s;pointer-events:none;user-select:none}
+.hero h1{font-weight:400;font-size:clamp(2.3rem,8.2vw,5.8rem);line-height:1.02;letter-spacing:0;position:relative;perspective:800px}
+.hero h1 span{display:block;animation:drop 1s cubic-bezier(.2,.8,.2,1) both;transform-origin:50% 100%}
+.hero h1 span:nth-child(2){animation-delay:.12s;color:var(--gold)}.hero h1 span:nth-child(3){animation-delay:.24s}
+@keyframes drop{from{opacity:0;transform:rotateX(-80deg) translateY(30px)}}
+.hero p{max-width:56ch;color:var(--mute);font-size:1.12rem;position:relative}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--edge);background:var(--panel);backdrop-filter:blur(12px);padding:6px 16px;border-radius:999px;font-weight:600;font-size:.88rem;margin-bottom:22px;width:fit-content;position:relative}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 10px #3ddc84}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:34px;position:relative}
+.board div{padding:16px;border-radius:16px;background:linear-gradient(160deg,rgba(79,140,255,.28),rgba(10,20,46,.8));border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 12px 30px rgba(0,0,0,.4)}
+.board b{display:block;font:400 1.55rem/1.15 Bungee,sans-serif;color:var(--gold);text-shadow:0 0 18px rgba(255,201,40,.5)}
+.board span{font-size:.84rem;color:var(--mute)}
+.h{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.h .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),#ff9f1a);color:#1a1200;box-shadow:0 0 28px rgba(255,201,40,.45);font-size:1.3rem}
+.h h2{font-weight:400;font-size:clamp(1.4rem,3.8vw,2.3rem);letter-spacing:0}
+.sub{color:var(--mute);margin:0 0 26px 60px;max-width:60ch}
+@media(max-width:600px){.sub{margin-left:0}}
+.glass{position:relative;background:var(--panel);border:1px solid var(--edge);border-radius:22px;padding:22px;backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:0 24px 60px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.18)}
+.tl{position:relative;display:grid;gap:16px;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold),var(--blue),transparent)}
+.tl .glass::before{content:"";position:absolute;left:-33px;top:26px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ff7a6d,#a40d12);box-shadow:0 0 16px rgba(255,80,60,.7)}
+.glass h3{font-size:1.02rem;font-weight:400;letter-spacing:.01em;line-height:1.3}
+.meta{color:var(--gold);font-size:.84rem;font-weight:700;margin:2px 0 8px}
+ul{margin:8px 0 0;padding-left:18px;color:var(--mute);font-size:.94rem}li{margin:3px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.tilt{transition:transform .2s,box-shadow .2s;transform-style:preserve-3d;will-change:transform}
+.tilt::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0),rgba(255,255,255,.18),transparent 60%)}
+.tilt:hover{box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 0 1px rgba(255,201,40,.5)}
+.tilt .i{font-size:1.6rem;color:var(--gold);margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tags span,.row span{border:1px solid var(--edge);background:rgba(79,140,255,.16);border-radius:999px;padding:3px 12px;font-size:.8rem;font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 22px}
+.row small{width:100%;color:var(--mute);font-weight:600}
+.row.a span{background:linear-gradient(135deg,var(--gold),#ff9f1a);color:#1a1200;border:0;font:400 .95rem Bungee,sans-serif;padding:10px 22px;box-shadow:0 0 24px rgba(255,201,40,.35)}
+.row.b span{font-size:.92rem;padding:7px 16px}
+.cert{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin-top:20px}
+.cert div{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;border:1px solid var(--edge);background:rgba(255,255,255,.04);font-size:.9rem;line-height:1.35}
+.cert .i{color:var(--gold);font-size:1.4rem}.cert small{display:block;color:var(--mute)}
+button,.btn{font:800 .95rem Figtree,sans-serif;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold),#ff9f1a);color:#1a1200;border:0;border-radius:999px;padding:12px 24px;cursor:pointer;text-decoration:none;box-shadow:0 0 28px rgba(255,201,40,.4);transition:transform .15s}
+button:hover,.btn:hover{transform:translateY(-2px) scale(1.03)}
+.btn.o{background:rgba(79,140,255,.2);color:var(--tx);border:1px solid var(--edge);box-shadow:none}
+.dock{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:9;display:flex;gap:4px;padding:8px;border-radius:999px;background:rgba(8,16,38,.7);border:1px solid var(--edge);backdrop-filter:blur(18px);box-shadow:0 12px 40px rgba(0,0,0,.6)}
+.dock a{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.84rem;color:var(--mute)}
+.dock a span{display:none}
+.dock a:hover,.dock a:focus-visible{background:var(--gold);color:#1a1200;outline:none}
+.dock a:hover span{display:inline}
+@media(min-width:900px){.dock a span{display:inline}}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+footer{text-align:center;color:var(--mute);padding-top:60px;font-size:.88rem}
+.vision{position:fixed;left:50%;bottom:6vh;width:min(96vw,980px);transform:translateX(-50%);opacity:0;z-index:-1;pointer-events:none;filter:drop-shadow(0 0 24px rgba(255,201,40,.35))}
+.vision svg{width:100%;display:block}
+.halo{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.25)}}
+.vcap{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);opacity:0;z-index:8;width:90%;text-align:center;color:var(--gold);font-size:.85rem;font-weight:600;text-shadow:0 2px 8px #000;pointer-events:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 6c4 3 4 9 0 12M19 6c-4 3-4 9 0 12"/></symbol>
+<symbol id="bat" viewBox="0 0 24 24"><path d="M15.5 3.5l5 5-9 10.5-4.5-4.5z"/><path d="M7 15l-3.5 5.5"/></symbol>
+<symbol id="wk" viewBox="0 0 24 24"><path d="M7 7v14M12 7v14M17 7v14M6 4h6M12 4h6"/></symbol>
+<symbol id="cup" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 01-8 0zM8 6H4v2a3 3 0 003 3M16 6h4v2a3 3 0 01-3 3M12 13v4M8 20h8"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.4 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.4 9.3l6-.7z"/></symbol>
+<symbol id="send" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8z"/></symbol>
+</defs></svg>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="vision" id="vision" aria-hidden="true"><svg viewBox="0 0 600 400"><defs>
+<radialGradient id="ha"><stop offset="0" stop-color="#fff6c8"/><stop offset=".3" stop-color="#ffc928" stop-opacity=".7"/><stop offset="1" stop-color="#ffc928" stop-opacity="0"/></radialGradient>
+<radialGradient id="au"><stop offset="0" stop-color="#4f8cff" stop-opacity=".55"/><stop offset="1" stop-color="#4f8cff" stop-opacity="0"/></radialGradient></defs>
+<circle cx="360" cy="190" r="230" fill="url(#au)"/>
+<path d="M0 385L90 305L160 350L260 275L360 345L470 285L600 372V400H0z" fill="#050b1a" stroke="#4f8cff" stroke-opacity=".4"/>
+<g fill="#060c20" stroke="#ffd45a" stroke-width="1.4" stroke-opacity=".85" stroke-linejoin="round">
+<ellipse cx="360" cy="64" rx="15" ry="19"/><circle cx="360" cy="96" r="21"/>
+<path d="M338 100q-20 42-12 100l12-6q-4-50 6-86zM382 100q20 42 12 100l-12-6q4-50-6-86z"/>
+<path d="M334 120h52l16 120h-84z"/><path d="M318 240h84l14 122h-112z"/>
+<path d="M336 126L268 184l-8-6l66-72z"/><path d="M384 126l36 40l6-8l-34-44z"/>
+<circle cx="168" cy="236" r="15"/><path d="M154 224q14-18 30 0z"/><path d="M148 254h46l10 58h-64z"/>
+<path d="M140 312l92 18l-2 16l-108-6z"/><path d="M122 340h118v16h-122z"/><path d="M192 266L262 208l8 9l-68 62z"/>
+<path d="M140 244l-18-34l9-5l18 34z"/>
+</g>
+<path d="M375 38a12 12 0 1 0 0 26a9 9 0 1 1 0-26z" fill="#ffd45a"/>
+<circle cx="360" cy="91" r="2.2" fill="#ffd45a"/>
+<path d="M352 72q-34 34-22 86q8 34-6 80" fill="none" stroke="#9fd0ff" stroke-width="3" stroke-opacity=".7"/>
+<g fill="none" stroke="#ffd45a" stroke-width="3" stroke-linecap="round"><path d="M430 8V372M414 28q0 24 16 24t16-24M414 28l-3-9M446 28l3-9"/><path d="M120 196q-44 76 0 150" stroke-width="4"/><path d="M120 196V346" stroke-width="1"/></g>
+<path d="M423 98h14l-7 9zM423 116h14l-7-9z" fill="#ffd45a"/>
+<circle class="halo" cx="268" cy="196" r="60" fill="url(#ha)"/><circle cx="268" cy="196" r="9" fill="#fff"/>
+<path d="M268 160v72M232 196h72M243 171l50 50M293 171l-50 50" stroke="#fff3b0" stroke-width="1.3" stroke-opacity=".8" fill="none"/>
+</svg></div>
+<div class="vcap" id="vcap" aria-hidden="true">Arjuna receives the Pashupatastra from Mahadev</div>
+
+<nav class="dock" aria-label="Sections">
+<a href="#top"><svg class="i"><use href="#ball"/></svg><span>Toss</span></a>
+<a href="#innings"><svg class="i"><use href="#bat"/></svg><span>Innings</span></a>
+<a href="#matches"><svg class="i"><use href="#wk"/></svg><span>Matches</span></a>
+<a href="#squad"><svg class="i"><use href="#star"/></svg><span>Squad</span></a>
+<a href="#trophies"><svg class="i"><use href="#cup"/></svg><span>Trophies</span></a>
+<a href="#contact"><svg class="i"><use href="#send"/></svg><span>Contact</span></a>
+</nav>
+
+<main>
+<header class="hero" id="top">
+<div class="seven" id="seven" aria-hidden="true">7</div>
+<div class="pill">Open to Data Analyst roles across Canada: on-site, hybrid, remote</div>
+<h1><span>Dipesh</span><span>Raj</span><span>Joshi</span></h1>
+<p>Data Analyst who turns raw numbers into clear business insight with SQL, Python and Excel. Master of Applied Computing, University of Windsor. Calm under pressure, accurate on every record, built to finish the game.</p>
+<div class="board">
+<div><b>7M+</b><span>flight records in a SQL warehouse</span></div>
+<div><b>30,000+</b><span>reviews analysed with NLP</span></div>
+<div><b>3.2×</b><span>faster queries after tuning</span></div>
+<div><b>150-200</b><span>billing records validated daily</span></div>
+</div>
+</header>
+
+<section id="innings">
+<div class="h"><div class="ic"><svg class="i"><use href="#bat"/></svg></div><h2>Innings</h2></div>
+<p class="sub">Where I've been batting, newest first.</p>
+<div class="tl">
+<div class="glass"><h3>Data Analyst</h3><div class="meta">LSP Technologies Inc, Canada. Contract, remote. Jul 2026 to now</div><ul><li>Database analysis, reporting and analysis.</li></ul></div>
+<div class="glass"><h3>Data Entry</h3><div class="meta">Central Transport, Windsor. Sep 2025 to now</div><ul><li>Validate and process 150-200 billing records daily, catching errors before they reach customers.</li></ul></div>
+<div class="glass"><h3>Computer Vision Research Intern</h3><div class="meta">University of Windsor. May to Aug 2026</div><ul><li>COMP 8977 "Obstacle Detection for Navigation using RGB Cameras", under Dr. Boufama and Dr. Ranga.</li><li>Tested model outputs for missed or wrong detections, debugged code and documented experiments.</li></ul></div>
+<div class="glass"><h3>Graduate Student Intern</h3><div class="meta">University of Windsor with Lepton Co. Inc. Jan to May 2026</div><ul><li>Project-based internship on the AI-powered Flutter app Dreamtale.</li><li>Validated data flows and backend integrations, checking accuracy and consistency, with edge-case scenarios and API-level checks.</li></ul></div>
+<div class="glass"><h3>Graduate Student</h3><div class="meta">University of Windsor. May 2025 to Aug 2026</div><ul><li>Delivered 6+ end-to-end projects across fintech, travel analytics, ML and cybersecurity.</li><li>Researched BadNets backdoor attacks on neural networks.</li></ul></div>
+<div class="glass"><h3>Undergraduate Research Student</h3><div class="meta">DIT University, India. Jan to Jun 2024</div><ul><li>Parkinson's disease detection with machine learning, in a team of 3.</li></ul></div>
+</div></section>
+
+<section id="matches">
+<div class="h"><div class="ic"><svg class="i"><use href="#wk"/></svg></div><h2>Man of the Match</h2></div>
+<p class="sub">Projects that moved the scoreboard.</p>
+<div class="grid">
+<div class="glass tilt"><svg class="i"><use href="#wk"/></svg><h3>Flight Performance Data Warehouse</h3><div class="meta">Aug to Dec 2025</div><ul><li>SQL warehouse over 7M+ flight records.</li><li>Schema design, indexing and query refactoring gave ~3.2× faster queries.</li><li>Reports on delays, cancellations and route efficiency.</li></ul><div class="tags"><span>SQL</span><span>ETL</span><span>Data Engineering</span></div><a class="btn o" style="margin-top:16px;padding:8px 18px;font-size:.85rem" href="https://drive.google.com/file/d/1qTbYZesT7ed3Z5wMLhtzYjW8lSkiJSpA/view" target="_blank" rel="noopener"><svg class="i"><use href="#send"/></svg>Read the paper</a></div>
+<div class="glass tilt"><svg class="i"><use href="#ball"/></svg><h3>Aspect-Based Sentiment Analysis</h3><div class="meta">Sep to Dec 2025</div><ul><li>30,000+ Amazon electronics reviews, before and after inflation.</li><li>VADER, custom aspect dictionaries, t-tests and Cohen's d.</li><li>Visual summaries of price, quality and delivery sentiment.</li></ul><div class="tags"><span>Python</span><span>NLP</span><span>Statistics</span></div><a class="btn o" style="margin-top:16px;padding:8px 18px;font-size:.85rem" href="https://drive.google.com/file/d/1BFe8iLgs1Ljx2DbrQ5J9UWNCvpGMbWj6/view" target="_blank" rel="noopener"><svg class="i"><use href="#send"/></svg>Read the paper</a></div>
+<div class="glass tilt"><svg class="i"><use href="#cup"/></svg><h3>HackHub.coding</h3><div class="meta">Jan 2026 to now</div><ul><li>Online coding contest and evaluation platform.</li><li>Django and REST APIs for users, contests, submissions and leaderboards.</li></ul><div class="tags"><span>Django</span><span>REST APIs</span></div></div>
+<div class="glass tilt"><svg class="i"><use href="#bat"/></svg><h3>News-Blog Platform</h3><div class="meta">Nov to Dec 2025</div><ul><li>Full-stack platform with 10+ REST APIs, auth, comments, likes, filtering.</li><li>bcrypt hashing, validation, pagination and sorting.</li></ul><div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span></div></div>
+<div class="glass tilt"><svg class="i"><use href="#star"/></svg><h3>Parkinson's Disease Detection</h3><div class="meta">Jan to May 2024. Final-year project</div><ul><li>SVM, random forest and neural network models in scikit-learn.</li><li>Judged on accuracy, precision, recall and F1.</li></ul><div class="tags"><span>Python</span><span>Machine Learning</span></div></div>
+<div class="glass tilt"><svg class="i"><use href="#star"/></svg><h3>Also in the squad</h3><ul><li>Selenium tool ranking bank credit cards by rewards and fees.</li><li>Dream Tale, a Flutter storytelling app.</li><li>Obstacle detection with RGB cameras (ongoing).</li></ul></div>
+</div></section>
+
+<section id="squad">
+<div class="h"><div class="ic"><svg class="i"><use href="#star"/></svg></div><h2>The batting order</h2></div>
+<p class="sub">Skills and tools, from openers to the tail.</p>
+<div class="glass">
+<div class="row a"><small>Openers</small><span>SQL</span><span>Python</span><span>Excel</span></div>
+<div class="row b"><small>Middle order</small><span>Data Visualization</span><span>Statistical Analysis</span><span>ETL Workflows</span><span>NLP</span><span>Machine Learning</span><span>Computer Vision</span></div>
+<div class="row b"><small>The finishers</small><span>Django</span><span>Node.js</span><span>MongoDB</span><span>Flutter</span><span>Selenium</span><span>Git</span><span>CI/CD</span><span>Jenkins</span><span>AWS</span><span>Java</span></div>
+<p style="color:var(--mute);margin:0">Education: Master of Applied Computing, University of Windsor (2025-2026). BTech in Computer Science and Engineering, DIT University (2020-2024).</p>
+</div></section>
+
+<section id="trophies">
+<div class="h"><div class="ic"><svg class="i"><use href="#cup"/></svg></div><h2>Trophy cabinet</h2></div>
+<p class="sub">Certifications and achievements. Scroll down the pitch, or bowl one at the stumps.</p>
+<div class="glass">
+<button id="bowl" type="button"><svg class="i"><use href="#ball"/></svg>Bowl at the stumps</button>
+<div class="cert">
+<div><svg class="i"><use href="#cup"/></svg><span>AWS Academy: Generative AI Foundations<small>Amazon Web Services, 2026</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Career Essentials in Data Analysis<small>Microsoft + LinkedIn Learning, 2025</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Test Automation Professional<small>LambdaTest, 2025</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>GitHub Actions Workshop: CI/CD<small>Microsoft Press, 2025</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Running Jenkins on AWS<small>LinkedIn Learning, 2025</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Selenium Essential Training<small>LinkedIn Learning, 2025</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Registered Computer Engineer<small>Nepal Engineering Council, 2025</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Python, SQL, Java, Software Engineer Intern<small>HackerRank, 2022-2024</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>AWS Cloud Practitioner Essentials<small>Amazon Web Services, 2022</small></span></div>
+<div><svg class="i"><use href="#cup"/></svg><span>Data Science, Cloud, Containers and AI<small>IBM, 2022-2023</small></span></div>
+</div></div></section>
+
+<section id="contact">
+<div class="h"><div class="ic"><svg class="i"><use href="#send"/></svg></div><h2>Send me in to bat</h2></div>
+<p class="sub">Need a Data Analyst who validates every record and explains the numbers clearly? Let's talk.</p>
+<div class="glass" style="display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn" href="https://www.linkedin.com/in/dipeshrajjoshi/" target="_blank" rel="noopener"><svg class="i"><use href="#send"/></svg>Message on LinkedIn</a>
+<a class="btn o" href="mailto:dipeshjoshi1000@gmail.com"><svg class="i"><use href="#send"/></svg>dipeshjoshi1000@gmail.com</a>
+</div>
+<footer>Windsor, Ontario, Canada. Number 7 forever.</footer>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var RM=matchMedia('(prefers-reduced-motion:reduce)').matches,mx=0,my=0,seven=document.getElementById('seven');
+addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;seven.style.setProperty('--sy',(-18+mx*24)+'deg');seven.style.setProperty('--sx',(6-my*14)+'deg')});
+document.querySelectorAll('.tilt').forEach(function(el){
+el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;el.style.transform='perspective(800px) rotateX('+((.5-y)*9)+'deg) rotateY('+((x-.5)*12)+'deg) translateZ(8px)';el.style.setProperty('--mx',x*100+'%');el.style.setProperty('--my',y*100+'%')});
+el.addEventListener('pointerleave',function(){el.style.transform=''})});
+var vis=document.getElementById('vision'),vcap=document.getElementById('vcap');
+function vupd(){var mx2=Math.max(1,document.documentElement.scrollHeight-innerHeight),p=scrollY/mx2,b=Math.max(0,1-Math.abs(p-.45)/.22);b=b*b*(3-2*b);vis.style.opacity=.75*b;vis.style.transform='translateX(-50%) translateY('+((.45-p)*80)+'px) scale('+(.94+.08*b)+')';vcap.style.opacity=b}
+addEventListener('scroll',vupd,{passive:true});vupd();
+if(!window.THREE)return;
+var cv=document.getElementById('gl'),R;
+try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true})}catch(e){return}
+R.setPixelRatio(Math.min(devicePixelRatio,2));R.setClearColor(0x050b1a);
+var S=new THREE.Scene();S.fog=new THREE.FogExp2(0x07122b,.016);
+var C=new THREE.PerspectiveCamera(55,1,.1,400);
+function size(){R.setSize(innerWidth,innerHeight,false);C.aspect=innerWidth/innerHeight;C.fov=C.aspect<1?75:55;C.updateProjectionMatrix()}
+size();addEventListener('resize',size);
+function tex(w,h,f){var c=document.createElement('canvas');c.width=w;c.height=h;f(c.getContext('2d'),w,h);var t=new THREE.CanvasTexture(c);return t}
+var grass=tex(256,16,function(g){for(var i=0;i<8;i++){g.fillStyle=i%2?'#0f4a26':'#146b34';g.fillRect(i*32,0,32,16)}});
+grass.wrapS=grass.wrapT=THREE.RepeatWrapping;grass.repeat.set(10,1);
+var gr=new THREE.Mesh(new THREE.PlaneGeometry(200,200),new THREE.MeshStandardMaterial({map:grass,roughness:.95}));gr.rotation.x=-Math.PI/2;S.add(gr);
+var pt=new THREE.Mesh(new THREE.PlaneGeometry(3.4,23),new THREE.MeshStandardMaterial({color:0xcaa968,roughness:.9}));pt.rotation.x=-Math.PI/2;pt.position.y=.02;S.add(pt);
+var lm=new THREE.MeshBasicMaterial({color:0xffffff});
+function line(w,d,x,z){var m=new THREE.Mesh(new THREE.PlaneGeometry(w,d),lm);m.rotation.x=-Math.PI/2;m.position.set(x,.04,z);S.add(m)}
+[-1,1].forEach(function(s){line(4.4,.09,0,s*8.8);line(3.4,.09,0,s*10);line(.09,2.6,-1.7,s*9.4);line(.09,2.6,1.7,s*9.4)});
+var rope=new THREE.Mesh(new THREE.TorusGeometry(58,.18,6,160),new THREE.MeshBasicMaterial({color:0xffffff}));rope.rotation.x=Math.PI/2;rope.position.y=.15;S.add(rope);
+S.add(new THREE.HemisphereLight(0x8fb2ff,0x0a1a10,.75));
+var dl=new THREE.DirectionalLight(0xdce8ff,.7);dl.position.set(12,30,10);S.add(dl);
+var pg=new THREE.PointLight(0xffc928,1.4,45);pg.position.set(0,7,-8);S.add(pg);
+var pb=new THREE.PointLight(0x4f8cff,1.4,45);pb.position.set(0,7,12);S.add(pb);
+function glow(){return tex(128,128,function(g){var r=g.createRadialGradient(64,64,0,64,64,64);r.addColorStop(0,'rgba(255,255,255,1)');r.addColorStop(.25,'rgba(255,240,190,.5)');r.addColorStop(1,'rgba(255,240,190,0)');g.fillStyle=r;g.fillRect(0,0,128,128)})}
+var gt=glow();
+[[-34,18,-34],[34,18,-34],[-34,18,34],[34,18,34]].forEach(function(p){var s=new THREE.Sprite(new THREE.SpriteMaterial({map:gt,blending:THREE.AdditiveBlending,depthWrite:false,fog:false}));s.scale.set(34,34,1);s.position.set(p[0],p[1],p[2]);S.add(s)});
+var st=new Float32Array(900),i,a;for(i=0;i<300;i++){a=Math.random()*6.283;var e=.15+Math.random()*1.2,r=150;st[i*3]=Math.cos(a)*r;st[i*3+1]=20+Math.random()*100;st[i*3+2]=Math.sin(a)*r}
+var sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(st,3));S.add(new THREE.Points(sg,new THREE.PointsMaterial({size:.9,color:0xffffff,fog:false,transparent:true,opacity:.8})));
+var cn=700,cp=new Float32Array(cn*3),cc=new Float32Array(cn*3),pal=[[1,.8,.2],[.3,.55,1],[1,1,1],[1,.4,.3]];
+for(i=0;i<cn;i++){a=Math.random()*6.283;var rr=64+Math.random()*10;cp[i*3]=Math.cos(a)*rr;cp[i*3+1]=1.5+Math.random()*9;cp[i*3+2]=Math.sin(a)*rr;var c=pal[i%4];cc.set(c,i*3)}
+var cg=new THREE.BufferGeometry();cg.setAttribute('position',new THREE.BufferAttribute(cp,3));cg.setAttribute('color',new THREE.BufferAttribute(cc,3));
+var crowd=new THREE.Points(cg,new THREE.PointsMaterial({size:.55,vertexColors:true,fog:false}));S.add(crowd);
+function stumps(z){var g=new THREE.Group(),m=new THREE.MeshStandardMaterial({color:0xf5e6b8,roughness:.4}),bm=new THREE.MeshStandardMaterial({color:0xffc928,emissive:0x7a5a00}),k;g.s=[];g.b=[];
+for(k=-1;k<2;k++){var s=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,1.8,12),m);s.home=new THREE.Vector3(k*.33,.9,0);g.add(s);g.s.push(s)}
+for(k=0;k<2;k++){var b=new THREE.Mesh(new THREE.CylinderGeometry(.04,.04,.34,8),bm);b.rotation.z=Math.PI/2;b.home=new THREE.Vector3(-.165+k*.33,1.86,0);g.add(b);g.b.push(b)}
+g.position.z=z;S.add(g);return g}
+var wA=stumps(-10),wB=stumps(10);
+function reset(w){w.s.concat(w.b).forEach(function(o){o.position.copy(o.home);o.rotation.x=0;o.rotation.y=0;if(w.b.indexOf(o)>=0){o.rotation.z=Math.PI/2}});w.b.forEach(function(b){b.v=null});w.s.forEach(function(s){s.t=null})}
+var seam=tex(256,128,function(g,w,h){g.fillStyle='#b3121a';g.fillRect(0,0,w,h);g.fillStyle='#fff';g.fillRect(0,h/2-3,w,6);for(var x=0;x<w;x+=10){g.fillRect(x,h/2-14,2,28)}});
+var ball=new THREE.Mesh(new THREE.SphereGeometry(.2,32,32),new THREE.MeshStandardMaterial({map:seam,roughness:.35}));S.add(ball);
+var bt=-1,hit=false,sc=2.6,clk=new THREE.Clock(),cp0=0,T=0;
+function bowl(){if(bt>=0)return;reset(wB);hit=false;bt=0}
+function knock(){wB.s.forEach(function(s,k){s.t={rx:1.2+Math.random()*.3,y:.45,z:.9+Math.random()*.6,x:s.home.x*(1.6+Math.random())}});
+wB.b.forEach(function(b){b.v=new THREE.Vector3((Math.random()-.5)*4,4+Math.random()*2,3+Math.random()*2)})}
+function frame(){requestAnimationFrame(frame);var dt=Math.min(clk.getDelta(),.05);T+=dt;
+var max=Math.max(1,document.documentElement.scrollHeight-innerHeight),p=Math.min(1,Math.max(0,scrollY/max));cp0+=(p-cp0)*.07;
+var e=cp0*cp0*(3-2*cp0),sw=Math.sin(cp0*Math.PI);
+C.position.set(mx*2+sw*7,16+(2.4-16)*e+my*1.2,24+(15.5-24)*e);
+C.lookAt(sw*-2,e*1,-4+(-10+4)*e);
+if(bt>=0){bt+=dt/1.1;var t=Math.min(bt,1),u;ball.position.z=-10+19.8*t;
+if(t<.68){u=t/.68;ball.position.y=.2+2.4*(1-u)*(1-u)}else{u=(t-.68)/.32;ball.position.y=.2+.7*u}
+ball.rotation.x-=dt*16;ball.position.x=0;
+if(bt>=1&&!hit){hit=true;knock()}
+if(hit)ball.position.z+=dt*5*Math.max(0,1-(bt-1)/1.2);
+if(bt>3.4){bt=-1;hit=false;reset(wB)}}
+else{ball.position.set(Math.sin(T*.5)*1.2,(RM?2.4:2.4+Math.sin(T*1.6)*.25),0);ball.rotation.y+=dt*.8;ball.rotation.x+=dt*.3}
+sc+=((bt<0?2.6:1)-sc)*.12;ball.scale.setScalar(sc);
+wB.s.forEach(function(s){if(s.t){s.rotation.x+=(s.t.rx-s.rotation.x)*.14;s.position.y+=(s.t.y-s.position.y)*.14;s.position.z+=(s.t.z-s.position.z)*.14;s.position.x+=(s.t.x-s.position.x)*.1}});
+wB.b.forEach(function(b){if(b.v&&b.position.y>.05){b.v.y-=12*dt;b.position.addScaledVector(b.v,dt);b.rotation.x+=dt*9}});
+crowd.rotation.y+=dt*.01;
+R.render(S,C)}
+frame();
+document.getElementById('bowl').addEventListener('click',bowl);
+try{var io=new IntersectionObserver(function(en){if(en[0].isIntersecting&&!RM)setTimeout(bowl,500)},{threshold:.5});io.observe(document.getElementById('trophies'))}catch(x){}
+})();
+</script>
+</body></html>
